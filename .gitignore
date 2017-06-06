@@ -1,0 +1,8 @@
+.sass-cache
+.DS_Store
+node_modules/
+bower_components/
+dist/
+app/stylesheets/main.min.css
+app/javascript/app.min.js
+reports/

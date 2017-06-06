@@ -1,0 +1,29 @@
+{
+  "name": "fblive",
+  "version": "1.0.0",
+  "description": "play with fblive",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeDeMoura/fblive.git"
+  },
+  "author": "Felipe De Moura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeDeMoura/fblive/issues"
+  },
+  "homepage": "https://github.com/FelipeDeMoura/fblive#readme"
+}
