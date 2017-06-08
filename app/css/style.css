@@ -55,3 +55,38 @@ h2, h3, h4 {
     margin: 60px 0 60px;
     position:relative;
 }
+
+/* css for fblive */
+
+.appBar .btn {
+    margin: 0px 5px;
+}
+.appId {
+    width: 150px;
+    margin: 0px 5px;
+}
+.appBar div {
+    float: left;
+}
+.appBar div label {
+    float: left;
+    line-height: 32px;
+    margin-right: 10px;
+}
+.settings, .encoderSelectCtr, .encoderProfileCtr, .streamingURLCtr, .streamNameCtr {
+    clear: both;
+}
+.encoderSelectCtr label, .encoderProfileCtr label , .streamingURLCtr label, .streamNameCtr label {
+    float: left;
+    width: 130px;
+    line-height: 32px;
+}
+.encoderSelectCtr select {
+    float: left;
+    margin-right: 10px;
+}
+.encoderProfileCtr input,  .streamingURLCtr input, .streamNameCtr input {
+    float: left;
+    width: 700px;
+    margin-right: 10px;
+}

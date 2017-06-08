@@ -23,6 +23,10 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
+app.get('/test', function(req, res) {
+    res.render('pages/test');
+});
+
 
 app.use(express.static('./app'));
 
