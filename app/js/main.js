@@ -24,6 +24,7 @@
         if (response.status === 'connected') {
             fbLoginBtn.style.display = 'none';
             pathVideoLiveUrl = response.authResponse.userID + pathVideoLiveUrl;
+            console.log('connected');
         } else {
             console.log('user ', response.status);
         }
@@ -51,7 +52,7 @@
     // }
 
     function _loginAsync () {
-        return new Promise(function (resolve, reject) {
+        return new Promise(function (resolve) {
             return FB.login(function (response) {
                 console.log('response: ', response);
                 return resolve(response);
@@ -76,9 +77,6 @@
             _loginAsync()
                 .then(function (resp) {
                     _statusChangeCallback(resp);
-                })
-                .catch(function (err) {
-                    throw new Error('login faild ' + err);
                 });
         };
 
@@ -111,12 +109,6 @@
     reloadBtn.addEventListener('click', function (event) {
         location.reload();
     }, true);
-
-    // inputInit.disabled = 'disabled';
-    // inputInit.setAttribute('disabled', 'true');
-    // initBtn.setAttribute('disabled', 'true');
-    // createLiveBtn.setAttribute('disabled', 'true');
-    // inputInit.removeAttribute('disabled');
 
     function changeAppId() {
         fbConfig.appId = inputInit.value;
