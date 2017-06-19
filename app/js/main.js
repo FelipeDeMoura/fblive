@@ -45,12 +45,6 @@
         });
     }
 
-    // function _loginScope (resp) {
-    //     console.log('resp object');
-    //     console.log(resp);
-    //     _statusChangeCallback(resp);
-    // }
-
     function _loginAsync () {
         return new Promise(function (resolve) {
             return FB.login(function (response) {
@@ -81,7 +75,7 @@
         };
 
         // Load the SDK Async
-        (function (d, s, id){
+        (function (d, s, id) {
             var js, fjs = doc.getElementsByTagName(s)[0];
             if (doc.getElementById(id)) {return;}
             js = doc.createElement(s); js.id = id;
@@ -93,7 +87,7 @@
     createLiveBtn.addEventListener('click', function (event) {
         console.log('trigger new appId: ', fbConfig.appId);
         console.log('videoLiveUrl: ', pathVideoLiveUrl);
-        // uiTrigger();
+
         startLiveVideo(pathVideoLiveUrl)
             .then(function (resp) {
                 console.log(resp);
@@ -134,3 +128,4 @@
     createLiveBtn.setAttribute('disabled', 'true');
 
 }(window, document));
+
